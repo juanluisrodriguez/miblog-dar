@@ -1,0 +1,34 @@
+body {
+    background-color: #151515;
+    color: #eaeaea;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: Monaco,bitstream vera sans mono,lucida console,Terminal,monospace;
+    color: #b5e853;
+    letter-spacing: -.03em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.1), 0 0 5px rgba(181,232,83,.1), 0 0 10px rgba(181,232,83,.1);
+}
+
+a {
+    color: #63c0f5;
+    text-shadow: 0 0 5px rgba(104,182,255,.5);
+}
+
+ header {
+     margin-bottom: 2em;
+ }
+header h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-family: Monaco,bitstream vera sans mono,lucida console,Terminal,monospace;
+    color: #b5e853;
+    text-shadow: 0 1px 1px rgba(0,0,0,.1), 0 0 5px rgba(181,232,83,.1), 0 0 10px rgba(181,232,83,.1);
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+}
