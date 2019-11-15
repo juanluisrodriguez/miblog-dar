@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,23 +13,21 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Blog de JL" />
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>
               <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <h2>
+                  <Link to={node.fields.slug}>
                     {title}
                   </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
+                </h2>
+                <time dateTime={node.frontmatter.dateUnformat}>
+                  {node.frontmatter.date}
+                </time>
               </header>
               <section>
                 <p
@@ -64,7 +61,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            dateUnformat: date
+            date(formatString: "DD MMMM, YYYY", locale: "es")
             title
             description
           }

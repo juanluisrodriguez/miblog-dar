@@ -37,7 +37,7 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      <Image
+      <Image className={`avatar`}
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
@@ -51,7 +51,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Blog generado por Gatsby para el trabajo <em>"Crea tu blog con un generador de sitios estáticos"</em> de la asignatura <strong>Desarrollo de Aplicaciones de Red</strong>
+        Blog generado con Gatsby para el trabajo <em>"Crea tu blog con un generador de sitios estáticos"</em> de la asignatura <strong>Desarrollo de Aplicaciones de Red</strong>.
       </p>
     </div>
   )
