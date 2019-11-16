@@ -35,6 +35,9 @@ class BlogIndex extends React.Component {
                     __html: node.frontmatter.description || node.excerpt,
                   }}
                 />
+                <Link to={node.fields.slug}>
+                  <span>Leer más...</span>
+                </Link>
               </section>
             </article>
           )

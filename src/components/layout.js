@@ -39,7 +39,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <footer className={`main-footer`}>
           © {new Date().getFullYear()}, Construido con
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -2,11 +2,12 @@ body {
     background-color: #151515;
     color: #eaeaea;
     font-size: 16px;
+    font-family: Monaco,lucida console,Terminal,monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
-    font-family: Monaco,bitstream vera sans mono,lucida console,Terminal,monospace;
+    font-family: Monaco,lucida console,Terminal,monospace;
     color: #b5e853;
     letter-spacing: -.03em;
     text-shadow: 0 1px 1px rgba(0,0,0,.1), 0 0 5px rgba(181,232,83,.1), 0 0 10px rgba(181,232,83,.1);
@@ -21,16 +22,22 @@ a {
      margin-bottom: 1em;
  }
 header h1 {
-    font-size: 24px;
+    font-size: 2em;
     line-height: 1.5;
     margin: 0;
     text-align: center;
     font-weight: 700;
-    font-family: Monaco,bitstream vera sans mono,lucida console,Terminal,monospace;
+    font-family: Monaco,lucida console,Terminal,monospace;
     color: #b5e853;
     text-shadow: 0 1px 1px rgba(0,0,0,.1), 0 0 5px rgba(181,232,83,.1), 0 0 10px rgba(181,232,83,.1);
     letter-spacing: -1px;
     -webkit-font-smoothing: antialiased;
+}
+
+header time{
+    font-size: 0.75em;
+    line-height: 1.75em;
+    display: block;
 }
 
 article header h2{
@@ -41,12 +48,22 @@ article header h2 a{
 }
 
 article.post-page header h1{
-    margin-top: 1.75rem;
+    margin-top: 1.75em;
     margin-bottom: 0;
 }
 
-header time{
-    font-size: 0.75rem;
-    line-height: 1.75rem;
-    display: block;
+article.post-page footer {
+    border-top: 1px white dashed;
+    border-bottom: 1px white dashed;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+article.post-page h2{
+    font-size: 1.5em;
+}
+
+.main-footer{
+    margin-top: 4em;
 }
